@@ -1,16 +1,79 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <title>Book Library</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
 
+        .book-library {
+            background-color: #ffffff;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .book {
+            width: 200px;
+            text-align: center;
+        }
+
+        .book img {
+            width: 100%;
+            height: auto;
+        }
+
+        .book h3 {
+            margin: 10px 0 5px;
+            font-size: 18px;
+        }
+
+        .book p.author {
+            margin: 0 0 10px;
+            color: #777777;
+            font-size: 14px;
+        }
+
+        .book .price {
+            background-color: #2ecc71;
+            color: white;
+            padding: 8px;
+            font-weight: bold;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="book-library">
+        <div class="book">
+            <img src="https://via.placeholder.com/200x250?text=Spy+in+the+Amber" alt="Spy in the Amber">
+            <h3>Spy in the Amber</h3>
+            <p class="author">Author Name</p>
+            <div class="price">₹299</div>
+        </div>
+
+        <div class="book">
+            <img src="https://via.placeholder.com/200x250?text=Sacred+Games" alt="Sacred Games">
+            <h3>Sacred Games</h3>
+            <p class="author">Vikram Chandra</p>
+            <div class="price">₹499</div>
+        </div>
+
+        <div class="book">
+            <img src="https://via.placeholder.com/200x250?text=Byomkesh+Bakshi" alt="Byomkesh Bakshi">
+            <h3>Byomkesh Bakshi</h3>
+            <p class="author">Sharadindu Bandyopadhyay</p>
+            <div class="price">₹399</div>
+        </div>
+    </div>
 
 </body>
-
 </html>
