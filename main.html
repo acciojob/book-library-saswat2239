@@ -5,97 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Library</title>
     <style>
-        /* Requirement: Body background #f8f8f8 */
+        /* Body: Background for the entire page #f8f8f8 */
         body {
             background-color: #f8f8f8;
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             display: flex;
             justify-content: center;
-            padding: 20px;
+            padding: 20px 0;
         }
 
-        /* Requirement: Class book-library with background #ffffff */
+        /* Library (class: book-library): Container with background #ffffff */
         .book-library {
             background-color: #ffffff;
-            width: 100%;
+            width: 90%;
             max-width: 500px;
             border: 1px solid #e0e0e0;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
 
-        .header {
+        .library-title {
             text-align: center;
             padding: 15px;
+            margin: 0;
             font-size: 20px;
             font-weight: bold;
-            border-bottom: 1px solid #eeeeee;
+            border-bottom: 2px solid #f1f1f1;
         }
 
-        /* Requirement: Class book */
+        /* Book Block (class: book): Block for each book */
         .book {
-            background-color: #f2f2f2;
-            margin: 15px;
-            padding: 15px;
-            border: 1px solid #e0e0e0;
+            background-color: #eeeeee;
+            margin: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
         }
 
-        .book-image {
+        .book img {
             display: block;
             margin: 0 auto 15px auto;
             max-width: 180px;
             height: auto;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
-        .book-title {
+        .book h2 {
             font-size: 16px;
-            font-weight: bold;
-            margin: 5px 0;
+            margin: 10px 0 2px 0;
             text-transform: uppercase;
         }
 
-        /* Requirement: Author color #777777 */
+        /* Author: color #777777 */
         .author {
             color: #777777;
             font-size: 13px;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
         }
 
-        /* Requirement: Price-block color #2ecc71 */
+        /* Price-block: color #2ecc71 */
         .price-block {
             background-color: #2ecc71;
             color: white;
             text-align: center;
-            padding: 8px 0;
-            font-size: 12px;
-            border-radius: 4px;
+            padding: 10px;
             font-weight: bold;
+            border-radius: 4px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
 
     <div class="book-library">
-        <div class="header">Book Library</div>
+        <h1 class="library-title">Book Library</h1>
 
         <div class="book">
-            <img class="book-image" src="https://m.media-amazon.com/images/I/91eK7fP-6SL._AC_UF1000,1000_QL80_.jpg" alt="Spy in the Amber">
-            <div class="book-title">SPY IN THE AMBER</div>
+            <img src="https://m.media-amazon.com/images/I/91eK7fP-6SL._AC_UF1000,1000_QL80_.jpg" alt="Spy in the Amber">
+            <h2>SPY IN THE AMBER</h2>
             <div class="author">BY Manohar Malgonkar</div>
             <div class="price-block">Rs. 299</div>
         </div>
 
         <div class="book">
-            <img class="book-image" src="https://m.media-amazon.com/images/I/91M1S2UAnFL._AC_UF1000,1000_QL80_.jpg" alt="Sacred Games">
-            <div class="book-title">Sacred Games</div>
+            <img src="https://m.media-amazon.com/images/I/91M1S2UAnFL._AC_UF1000,1000_QL80_.jpg" alt="Sacred Games">
+            <h2>Sacred Games</h2>
             <div class="author">by Vikram Chandra</div>
             <div class="price-block">Rs. 199</div>
         </div>
 
         <div class="book">
-            <img class="book-image" src="https://m.media-amazon.com/images/I/81S6r6Nf0hL._AC_UF1000,1000_QL80_.jpg" alt="Byomkesh Bakshi Stories">
-            <div class="book-title">BYOMKESH BAKSHI</div>
+            <img src="https://m.media-amazon.com/images/I/81S6r6Nf0hL._AC_UF1000,1000_QL80_.jpg" alt="Byomkesh Bakshi">
+            <h2>BYOMKESH BAKSHI</h2>
             <div class="author">By Sharadindu Bandyopadhyay</div>
             <div class="price-block">Rs. 249</div>
         </div>
